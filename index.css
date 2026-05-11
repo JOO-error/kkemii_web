@@ -321,6 +321,19 @@ main {
     margin-bottom: 2rem;
 }
 
+.app-store-link {
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.app-store-link:hover {
+    transform: scale(1.05);
+}
+
+.app-store-link img {
+    display: block;
+}
+
 /* News Section */
 .news-section {
     padding: 10rem 5vw;
@@ -474,6 +487,79 @@ footer {
 .copyright {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+/* Support Page Specifics */
+.contact-form-section {
+    max-width: 800px;
+    margin: 6rem auto 0;
+    padding: 0 5vw;
+    text-align: center;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: left;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.5rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 102, 255, 0.3);
+    filter: brightness(1.1);
 }
 
 @media (max-width: 768px) {

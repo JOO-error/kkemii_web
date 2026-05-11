@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <title>Customer Support | kkemii</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css?v=1.0.2">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
@@ -22,41 +24,49 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
         }
+
         .support-header {
             text-align: center;
             margin-bottom: 5rem;
         }
+
         .support-header h1 {
             font-size: clamp(2.5rem, 6vw, 4rem);
             font-weight: 900;
             margin-bottom: 1rem;
             letter-spacing: -0.05em;
         }
+
         .support-header p {
             color: var(--text-secondary);
             font-size: 1.2rem;
         }
+
         .support-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-bottom: 5rem;
         }
+
         .support-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.05);
             padding: 2.5rem;
             border-radius: 24px;
         }
+
         .support-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--text-primary);
         }
+
         .support-card p {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
         }
+
         .support-link {
             color: var(--text-primary);
             text-decoration: none;
@@ -64,23 +74,28 @@
             border-bottom: 2px solid var(--text-gradient);
             padding-bottom: 2px;
         }
+
         .faq-section h2 {
             margin-bottom: 2rem;
             font-weight: 900;
         }
+
         .faq-item {
             margin-bottom: 2rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             padding-bottom: 1.5rem;
         }
+
         .faq-item h4 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
             color: var(--text-primary);
         }
+
         .faq-item p {
             color: var(--text-secondary);
         }
+
         .back-home {
             display: inline-block;
             margin-top: 4rem;
@@ -89,11 +104,13 @@
             font-weight: 700;
             transition: color 0.3s ease;
         }
+
         .back-home:hover {
             color: var(--text-primary);
         }
     </style>
 </head>
+
 <body>
     <div class="support-header">
         <h1>Customer Support</h1>
@@ -107,13 +124,42 @@
             <a href="mailto:support@kkemii.com" class="support-link">support@kkemii.com</a>
         </div>
         <div class="support-card">
-            <h3>App Inquiry</h3>
-            <p>Questions about Damkkut, TTAK, or upcoming projects?</p>
+            <h3>General Inquiry</h3>
+            <p>Questions about our studio or upcoming projects?</p>
             <a href="mailto:hello@kkemii.com" class="support-link">hello@kkemii.com</a>
         </div>
     </div>
 
-    <section class="faq-section">
+    <section class="contact-form-section">
+        <h2>Send us a Message</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">Have a specific question? Fill out the form
+            below and we'll get back to you as soon as possible.</p>
+
+        <form action="https://aged-dust-94c6.le-go0070.workers.dev" method="POST" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <section class="faq-section" style="margin-top: 8rem;">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-item">
             <h4>How do I restore my purchases?</h4>
@@ -131,4 +177,5 @@
 
     <a href="index.html" class="back-home">← Back to Home</a>
 </body>
+
 </html>
