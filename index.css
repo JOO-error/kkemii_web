@@ -75,12 +75,11 @@ main {
 }
 
 .hero {
-    height: 100vh;
+    padding: 15vh 5vw 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 5vw;
 }
 
 .logo {
@@ -110,10 +109,10 @@ main {
 }
 
 .info {
-    padding: 4rem 5vw;
+    padding: 0 5vw 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .info-content h2 {
