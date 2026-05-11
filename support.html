@@ -155,6 +155,11 @@
                 <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry..."
                     required></textarea>
             </div>
+            <!-- Honeypot field for bot protection -->
+            <div style="display:none;">
+                <label>Leave this field blank</label>
+                <input type="text" name="honeypot" value="">
+            </div>
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </section>
